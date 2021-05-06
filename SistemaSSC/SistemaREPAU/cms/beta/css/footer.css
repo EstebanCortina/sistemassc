@@ -1,0 +1,38 @@
+.bd-footer {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	display: inline-block;
+	width: 100%;
+	float: left;
+	color: #ffffff !important
+}
+.logo-ucol {
+	max-width: 300px !important;
+}
+.bd-footer small {
+	font-weight: 100 !important;
+	font-size: 9px !important;
+}
+.center-links {
+	text-align: center;
+}
+.bd-footer hr {
+	border-color: #ffffff !important;
+}
+
+footer a:hover {
+	color: #ffffff !important;
+}
+.redes-horizontal {
+	padding: 0;
+    margin: 0;
+}
+.redes-horizontal li {
+    float: left;
+    list-style: none;
+    margin-bottom: 5px;
+    padding-right: 5px;
+}
+.redes-horizontal li img{
+	width: 30px;
+}
