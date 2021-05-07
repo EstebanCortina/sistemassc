@@ -158,6 +158,7 @@
 					<?php 
 						include("conexion.php");
 						include("adentro2.php");
+						// El id es obtenido de la URL desde dependenciasUsuario.php para obtener la información de la dependencia seleccionada
 						$id = $_GET['id'];
 						$query = "SELECT * FROM dependencia WHERE ID ='$id'";
 						$resultado = $conexion->query($query);

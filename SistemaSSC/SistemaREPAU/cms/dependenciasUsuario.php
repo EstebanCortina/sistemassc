@@ -178,7 +178,10 @@
                             <tbody>
 
                                 <?php
-
+                                /**
+                                 * Creé ésta pagina para listar todas las dependencias que tenga un usuario y asi darle la libertad de poder modificar
+                                 * la que considere necesario editar
+                                 */
                                 $conexion = mysqli_connect('localhost', 'root', '', 'sistemarepau');
     
                                 if ($conexion) {

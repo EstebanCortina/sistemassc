@@ -15,6 +15,8 @@
 	echo $id3;
 
 	//QUERY DE UPDATE //
+	// Una buena práctica es organizar tuds querys así, te da mejor facilidad de lectura
+	// Y esta es la estructura de un UPDATE en SQL
 	$query = "UPDATE 
 				dependencia 
 			SET
