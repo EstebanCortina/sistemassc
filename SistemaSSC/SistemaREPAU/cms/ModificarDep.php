@@ -158,34 +158,35 @@
 					<?php 
 						include("conexion.php");
 						include("adentro2.php");
-						$query = "SELECT * FROM dependencia WHERE ID ='$DepCargo'";
+						$id = $_GET['id'];
+						$query = "SELECT * FROM dependencia WHERE ID ='$id'";
 						$resultado = $conexion->query($query);
 						while($row = $resultado->fetch_assoc()){
 					?>
-						<input style="width: 0px; height: 0px" type="text" name="id3" value="<?php echo $DepCargo; ?>">
+						<input style="width: 0px; height: 0px" type="text" name="id3" value="<?php echo $id; ?>">
 						<img src="data:image/jpg;base64,<?php echo base64_encode($row['Imagen']); ?>">
 					<h2><label for="Nombre">Nombre:</label></h2>
-					<input type="text" REQUIRED name="Nombre" placeholder="<?php echo $row['Nombre']; ?>" >
+					<input type="text" REQUIRED name="Nombre" placeholder="<?php echo $row['Nombre']; ?>" value="<?php echo $row['Nombre']; ?>" >
 					<br>
 					<br>
 					<h2><label for="Nombre">Dirección:</label></h2>
-					<input type="text" REQUIRED name="Dir" placeholder="<?php echo $row['Dir']; ?>">
+					<input type="text" REQUIRED name="Dir" placeholder="<?php echo $row['Dir']; ?>" value="<?php echo $row['Dir']; ?>">
 					
 					<br>
 					<br>
 					<h2><label for="Nombre">Encargado:</label></h2>
-					<input type="text" REQUIRED name="En" placeholder="<?php echo $row['En']; ?>">
+					<input type="text" REQUIRED name="En" placeholder="<?php echo $row['En']; ?>" value="<?php echo $row['En']; ?>">
 					<br><br>
 					<h2><label for="Nombre">Número de Cuenta:</label></h2>
-					<input type="text" REQUIRED name="NoCuenta" placeholder="<?php echo $row['NoCuenta']; ?>">
+					<input type="text" REQUIRED name="NoCuenta" placeholder="<?php echo $row['NoCuenta']; ?>" value="<?php echo $row['NoCuenta']; ?>">
 					<br><br>
 					<h2><label for="Nombre">Correo del Encargado</label></h2>
-					<input type="text" REQUIRED name="Co" placeholder="<?php echo $row['Co']; ?>">
+					<input type="text" REQUIRED name="Co" placeholder="<?php echo $row['Co']; ?>" value="<?php echo $row['Co']; ?>">
 					<br><br>
 					<h2><label for="Nombre">Capacidad del espacio</label></h2>
-					<input type="text" REQUIRED name="Ca" placeholder="<?php echo $row['Ca']; ?>">
+					<input type="text" REQUIRED name="Ca" placeholder="<?php echo $row['Ca']; ?>" value="<?php echo $row['Ca']; ?>">
 					<h2><label for="Des">Descripción</label></h2>
-					<textarea name="Des" rows="4" REQUIRED cols="50" placeholder="<?php echo $row['Des']; ?>"></textarea>
+					<textarea name="Des" rows="4" REQUIRED cols="50" placeholder="<?php echo $row['Des']; ?>" value="<?php echo $row['Des']; ?>"></textarea>
 					<br>
 					<br>
 

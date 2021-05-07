@@ -4,7 +4,7 @@
      $con = mysqli_connect("localhost","root","","sistemarepau");
 
 	if (isset($_POST['save_fecha'])){
-	
+	/**  */
 	include("adentro4.php");
 					
 	$Lugar = $_POST['Lugar'];

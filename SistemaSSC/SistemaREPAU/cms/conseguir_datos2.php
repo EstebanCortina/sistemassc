@@ -4,6 +4,9 @@ $conexion = mysqli_connect('localhost','root','','sistemarepau');
 	
 
 	if($conexion){
+		/** El error estaba en adentro4.php, pues iniciaba la sesión pero no seteaba el valor a la SESSION porque lo tenias en el else
+		 * Pero nunca iba a entrar al else porque no hay una sesión activa cuando se inicia ese archivo
+		 */
 		include("adentro5.php");
 		$consulta = "SELECT * FROM reservaciones WHERE NoCuenta ='$usuario'";
 

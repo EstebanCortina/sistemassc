@@ -115,7 +115,7 @@
   	
     <a href="AniadirDep.php" style="text-decoration: underline;">-Añadir Espacio</a>
     <br>
-    <a href="ModificarDep.php" style="text-decoration: underline;">-Modificar Espacio</a>
+    <a href="dependenciasUsuario.php" style="text-decoration: underline;">Listado de Espacios</a>
 
     
     <div class="container" style="width: 900px">
